@@ -655,6 +655,20 @@ Government ITI Information Portal
 </p>
 
 </footer>
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+  <span class="close-image">&times;</span>
+  <img id="fullImage" src="" alt="Full Size Image">
+</div>
 
+<script>
+function openImage(src) {
+  document.getElementById("fullImage").src = src;
+  document.getElementById("imageModal").style.display = "flex";
+}
+
+function closeImage() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
 </body>
 </html>
