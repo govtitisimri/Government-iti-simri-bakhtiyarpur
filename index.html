@@ -1,139 +1,609 @@
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Government ITI Simri Bakhtiyarpur, Saharsa</title>
-  <meta name="description" content="Official website of Government ITI Simri Bakhtiyarpur, Saharsa, Bihar">
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Arial,sans-serif;background:#f4f7fb;color:#222;line-height:1.6}
-    header{background:#0b3d91;color:white}
-    .top{background:#082d68;padding:7px;text-align:center;font-size:14px}
-    .header{padding:18px 5%;display:flex;align-items:center;gap:18px}
-    .logo{width:70px;height:70px;border-radius:50%;background:white;color:#0b3d91;
-      display:flex;align-items:center;justify-content:center;font-weight:bold;text-align:center}
-    h1{font-size:27px}
-    .subtitle{font-size:15px}
-    nav{background:#06275b;padding:12px 5%;display:flex;gap:20px;flex-wrap:wrap}
-    nav a{color:white;text-decoration:none;font-weight:bold}
-    .hero{padding:55px 5%;background:linear-gradient(120deg,#e8f1ff,#fff);text-align:center}
-    .hero h2{font-size:34px;color:#0b3d91;margin-bottom:12px}
-    .hero p{font-size:18px}
-    .container{max-width:1150px;margin:auto;padding:35px 20px}
-    .section-title{color:#0b3d91;margin-bottom:20px;border-left:5px solid #0b3d91;padding-left:12px}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-    .card{background:white;padding:22px;border-radius:10px;box-shadow:0 3px 12px #0001}
-    .card h3{color:#0b3d91;margin-bottom:8px}
-    .notice{background:white;border-radius:10px;padding:20px;box-shadow:0 3px 12px #0001}
-    .notice li{margin:10px 0;border-bottom:1px solid #ddd;padding-bottom:8px}
-    footer{background:#082d68;color:white;text-align:center;padding:28px;margin-top:20px}
-    .badge{display:inline-block;background:#0b3d91;color:white;padding:7px 15px;border-radius:20px;margin-top:15px}
-    @media(max-width:600px){h1{font-size:20px}.hero h2{font-size:27px}.header{padding:15px}.logo{width:55px;height:55px}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Government ITI Simri Bakhtiyarpur, Saharsa</title>
+
+<meta name="description" content="Government ITI Simri Bakhtiyarpur, Saharsa, Bihar">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#f4f7fb;
+  color:#222;
+  line-height:1.6;
+}
+
+/* TOP BAR */
+.topbar{
+  background:#073b7a;
+  color:white;
+  text-align:center;
+  padding:8px;
+  font-size:14px;
+}
+
+/* HEADER */
+header{
+  background:white;
+  border-bottom:4px solid #ff9933;
+}
+
+.header{
+  max-width:1200px;
+  margin:auto;
+  padding:18px 20px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.logo{
+  width:75px;
+  height:75px;
+  border-radius:50%;
+  background:#073b7a;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-weight:bold;
+  font-size:17px;
+  border:5px solid #ff9933;
+}
+
+.header h1{
+  color:#073b7a;
+  font-size:27px;
+}
+
+.header p{
+  color:#555;
+}
+
+/* NAVIGATION */
+nav{
+  background:#062d5c;
+}
+
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  padding:14px 16px;
+  font-weight:bold;
+  display:block;
+}
+
+nav a:hover{
+  background:#ff9933;
+  color:#111;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg,#eaf3ff,#ffffff);
+  text-align:center;
+  padding:65px 20px;
+}
+
+.hero h2{
+  color:#073b7a;
+  font-size:38px;
+  margin-bottom:12px;
+}
+
+.hero p{
+  font-size:18px;
+  max-width:800px;
+  margin:auto;
+}
+
+.badge{
+  display:inline-block;
+  background:#ff9933;
+  color:#111;
+  padding:8px 18px;
+  border-radius:25px;
+  margin-top:20px;
+  font-weight:bold;
+}
+
+.buttons{
+  margin-top:22px;
+}
+
+.btn{
+  display:inline-block;
+  background:#073b7a;
+  color:white;
+  text-decoration:none;
+  padding:11px 20px;
+  border-radius:5px;
+  margin:5px;
+  font-weight:bold;
+}
+
+.btn:hover{
+  background:#ff9933;
+  color:#111;
+}
+
+/* COMMON */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.section-title{
+  color:#073b7a;
+  border-left:6px solid #ff9933;
+  padding-left:12px;
+  margin-bottom:22px;
+  font-size:28px;
+}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:24px;
+  border-radius:8px;
+  box-shadow:0 3px 12px rgba(0,0,0,.10);
+}
+
+.card h3{
+  color:#073b7a;
+  margin-bottom:10px;
+}
+
+/* PRINCIPAL */
+.principal{
+  background:white;
+  padding:28px;
+  border-radius:8px;
+  border-top:5px solid #073b7a;
+  box-shadow:0 3px 12px rgba(0,0,0,.10);
+}
+
+.principal h3{
+  color:#073b7a;
+  margin-bottom:10px;
+}
+
+/* NOTICE */
+.notice{
+  background:white;
+  padding:25px;
+  border-radius:8px;
+  box-shadow:0 3px 12px rgba(0,0,0,.10);
+}
+
+.notice li{
+  padding:12px;
+  border-bottom:1px solid #ddd;
+}
+
+.notice li:last-child{
+  border-bottom:none;
+}
+
+/* GALLERY */
+.gallery-card{
+  height:180px;
+  background:linear-gradient(135deg,#dbeaff,#ffffff);
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#073b7a;
+  font-size:20px;
+  font-weight:bold;
+  box-shadow:0 3px 12px rgba(0,0,0,.10);
+}
+
+/* LINKS */
+.links a{
+  color:#073b7a;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.links a:hover{
+  text-decoration:underline;
+}
+
+/* FOOTER */
+footer{
+  background:#062d5c;
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+  margin-top:20px;
+}
+
+footer p{
+  margin:5px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+
+  .header{
+    padding:15px;
+  }
+
+  .logo{
+    width:58px;
+    height:58px;
+    font-size:13px;
+    border-width:3px;
+  }
+
+  .header h1{
+    font-size:19px;
+  }
+
+  .header p{
+    font-size:13px;
+  }
+
+  nav a{
+    padding:11px 12px;
+    font-size:14px;
+  }
+
+  .hero{
+    padding:45px 15px;
+  }
+
+  .hero h2{
+    font-size:28px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .section-title{
+    font-size:24px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <div class="top">Government of Bihar | Skill Development & Technical Education</div>
+<!-- TOP BAR -->
+<div class="topbar">
+  Government of Bihar | Skill Development & Technical Education
+</div>
 
-  <div class="header">
-    <div class="logo">ITI<br>SBP</div>
-    <div>
-      <h1>Government ITI Simri Bakhtiyarpur</h1>
-      <div class="subtitle">Saharsa, Bihar</div>
-    </div>
+<!-- HEADER -->
+<header>
+
+<div class="header">
+
+  <div class="logo">
+    ITI<br>SBP
   </div>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About ITI</a>
-    <a href="#trades">Trades</a>
-    <a href="#admission">Admission</a>
-    <a href="#notice">Notice</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div>
+    <h1>Government ITI Simri Bakhtiyarpur</h1>
+    <p>Saharsa, Bihar</p>
+  </div>
+
+</div>
+
+<!-- NAVIGATION -->
+<nav>
+<div class="nav-container">
+
+<a href="#home">Home</a>
+<a href="#about">About ITI</a>
+<a href="#principal">Principal</a>
+<a href="#trades">Trades</a>
+<a href="#admission">Admission</a>
+<a href="#notice">Notice</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+
+</div>
+</nav>
+
 </header>
 
+
+<!-- HERO -->
 <section class="hero" id="home">
-  <h2>Government ITI Simri Bakhtiyarpur</h2>
-  <p>Welcome to the official information portal of Government ITI Simri Bakhtiyarpur, Saharsa, Bihar.</p>
-  <span class="badge">Skill • Training • Employment</span>
+
+<h2>Government ITI Simri Bakhtiyarpur</h2>
+
+<p>
+Welcome to the official information portal of
+Government ITI Simri Bakhtiyarpur, Saharsa, Bihar.
+</p>
+
+<div class="badge">
+Skill • Training • Employment
+</div>
+
+<div class="buttons">
+<a class="btn" href="#admission">Admission Information</a>
+<a class="btn" href="#notice">Latest Notices</a>
+</div>
+
 </section>
 
+
+<!-- ABOUT -->
 <section class="container" id="about">
-  <h2 class="section-title">About ITI</h2>
-  <div class="card">
-    <p>
-      Government ITI Simri Bakhtiyarpur provides Industrial Training
-      and skill-oriented technical education to students. The institute
-      focuses on practical training, employability and development of
-      industry-relevant skills.
-    </p>
-  </div>
+
+<h2 class="section-title">About ITI</h2>
+
+<div class="card">
+
+<p>
+Government ITI Simri Bakhtiyarpur provides Industrial Training
+and skill-oriented technical education to students.
+The institute focuses on practical training, employability
+and development of industry-relevant technical skills.
+</p>
+
+</div>
+
 </section>
 
+
+<!-- PRINCIPAL -->
+<section class="container" id="principal">
+
+<h2 class="section-title">Principal's Message</h2>
+
+<div class="principal">
+
+<h3>Welcome to Government ITI Simri Bakhtiyarpur</h3>
+
+<p>
+Our aim is to provide quality skill training, practical learning
+and better career opportunities to students.
+Students are encouraged to develop technical skills,
+discipline and professional values.
+</p>
+
+<br>
+
+<p>
+<strong>Principal</strong><br>
+Government ITI Simri Bakhtiyarpur, Saharsa
+</p>
+
+</div>
+
+</section>
+
+
+<!-- TRADES -->
 <section class="container" id="trades">
-  <h2 class="section-title">ITI Trades</h2>
 
-  <div class="cards">
-    <div class="card">
-      <h3>Electrician</h3>
-      <p>Electrical installation, maintenance and practical training.</p>
-    </div>
+<h2 class="section-title">ITI Trades</h2>
 
-    <div class="card">
-      <h3>Fitter</h3>
-      <p>Workshop practice, fitting operations and mechanical skills.</p>
-    </div>
+<div class="cards">
 
-    <div class="card">
-      <h3>Other Trades</h3>
-      <p>Trade availability and details can be updated according to the institute.</p>
-    </div>
-  </div>
+<div class="card">
+<h3>Electrician</h3>
+<p>
+Electrical installation, maintenance and practical training.
+</p>
+</div>
+
+<div class="card">
+<h3>Fitter</h3>
+<p>
+Workshop practice, fitting operations and mechanical skills.
+</p>
+</div>
+
+<div class="card">
+<h3>Other Trades</h3>
+<p>
+Trade availability and details can be updated according
+to the institute.
+</p>
+</div>
+
+</div>
+
 </section>
 
+
+<!-- ADMISSION -->
 <section class="container" id="admission">
-  <h2 class="section-title">Admission</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>ITI Admission</h3>
-      <p>Students can check official admission notifications and counselling information.</p>
-    </div>
 
-    <div class="card">
-      <h3>Documents</h3>
-      <p>Keep educational certificates, identity proof, photographs and other required documents ready.</p>
-    </div>
-  </div>
+<h2 class="section-title">Admission</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>ITI Admission</h3>
+
+<p>
+Students can check official admission notifications,
+counselling information and important updates.
+</p>
+
+<a class="btn" href="#notice">
+View Updates
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h3>Required Documents</h3>
+
+<p>
+Keep educational certificates, identity proof,
+photographs and other required documents ready
+as per the official admission notification.
+</p>
+
+</div>
+
+</div>
+
 </section>
 
+
+<!-- NOTICE -->
 <section class="container" id="notice">
-  <h2 class="section-title">Latest Notices</h2>
-  <div class="notice">
-    <ul>
-      <li>Admission and counselling updates will be published here.</li>
-      <li>Institute notices and important announcements will be updated here.</li>
-      <li>Students are advised to check official notifications regularly.</li>
-    </ul>
-  </div>
+
+<h2 class="section-title">Latest Notices</h2>
+
+<div class="notice">
+
+<ul>
+
+<li>
+Admission and counselling updates will be published here.
+</li>
+
+<li>
+Institute notices and important announcements will be updated here.
+</li>
+
+<li>
+Students are advised to check official notifications regularly.
+</li>
+
+</ul>
+
+</div>
+
 </section>
 
+
+<!-- GALLERY -->
+<section class="container" id="gallery">
+
+<h2 class="section-title">Photo Gallery</h2>
+
+<div class="cards">
+
+<div class="gallery-card">
+Institute Campus
+</div>
+
+<div class="gallery-card">
+Workshop & Practical Training
+</div>
+
+<div class="gallery-card">
+Institute Events
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
 <section class="container" id="contact">
-  <h2 class="section-title">Contact Information</h2>
-  <div class="card">
-    <h3>Government ITI Simri Bakhtiyarpur</h3>
-    <p><strong>District:</strong> Saharsa, Bihar</p>
-    <p><strong>Institute:</strong> Government Industrial Training Institute</p>
-    <p><strong>Address:</strong> Simri Bakhtiyarpur, Saharsa, Bihar</p>
-  </div>
+
+<h2 class="section-title">Contact Information</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Government ITI Simri Bakhtiyarpur</h3>
+
+<p>
+<strong>District:</strong> Saharsa, Bihar
+</p>
+
+<p>
+<strong>Institute:</strong>
+Government Industrial Training Institute
+</p>
+
+<p>
+<strong>Location:</strong>
+Simri Bakhtiyarpur, Saharsa, Bihar
+</p>
+
+</div>
+
+
+<div class="card links">
+
+<h3>Important Links</h3>
+
+<p>
+<a href="https://dgt.gov.in/" target="_blank">
+Directorate General of Training (DGT)
+</a>
+</p>
+
+<br>
+
+<p>
+<a href="https://state.bihar.gov.in/" target="_blank">
+Government of Bihar
+</a>
+</p>
+
+</div>
+
+</div>
+
 </section>
 
+
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 Government ITI Simri Bakhtiyarpur, Saharsa</p>
-  <p>Government ITI Information Portal</p>
+
+<p>
+<strong>Government ITI Simri Bakhtiyarpur, Saharsa</strong>
+</p>
+
+<p>
+© 2026 Government ITI Simri Bakhtiyarpur
+</p>
+
+<p>
+Government ITI Information Portal
+</p>
+
 </footer>
 
 </body>
